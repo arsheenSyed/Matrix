@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Customer Feedback Form</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600" rel="stylesheet"
+    type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css" />
+	
+</head>
+
+<body>
+  <div class="container">
+    <form action="addFeedback.php" method="POST">
+
+
+
+      <img src="../logo.png" alt="logo" class="logo" />
+      <h1 id="title" >Customer Feedback Form</h1>
+      <hr>
+      <br>
+
+      <table style="width:50%;text-align:left!important">
+        <tr>
+          <td><label for="cust_name">Name :</label></td>
+          <td><input type="text" value="" id="cust_name" name="cust_name"></td>
+        </tr>
+
+        <tr>
+          <td><label for="program_name">Program Name :</label></td>
+          <td><select id="program_name" name="program_name">
+              <option value="session1">Session 1</option>
+              <option value="session2">Session 2</option>
+              <option value="session3">Session 3</option>
+              <option value="session4">Session 4</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td> <label for="Date">Date :</label></td>
+          <td><input type="date" id="session_date" name="session_date"></td>
+        </tr>
+
+        <tr>
+          <td><label for="Day">Day :</label></td>
+          <td><select id="session_day" name="session_day">
+              <option value="monday">Monday</option>
+              <option value="tuesday">Tuesday</option>
+              <option value="wednesday">Wednesday</option>
+              <option value="Thursday">Thursday</option>
+              <option value="friday">Friday</option>
+              <option value="satday">Satday</option>
+              <option value="sunday">Sunday</option>
+            </select>
+          </td>
+        </tr>
+
+      </table>
+
+      <hr>
+
+      <h3>Overall experience with our service.</h3><br>
+      <table class="table_design">
+
+        <div class="ratings">
+          <tr class="design">
+            <th class="th-first-col">Areas to Rate</th>
+         
+		
+            <th class="very">5</th>
+            <th class="very">4</th>
+            <th class="very">3</th>
+            <th class="very">2</th>
+            <th class="very">1</th>
+			
+			
+          </tr>
+
+          <tr class="">
+            <td class="first-col">
+              My challenges/issues/goals were addressed during the session
+            </td>
+			<td><div class="moji">😄</div></td>
+            <td colspan="4" class="check-box" >
+				<div class="slider">
+					<span>Yay!</span>
+					<input id="challenges_rating" name="challenges_rating" type="range" value="0" min="0" max="5" step="1">
+					<span>Sad!</span>
+				</div>
+            </td>
+			
+			
+          </tr>
+
+          <tr class="design">
+            <td class="first-col">
+              I am satisfied with the coach I worked with</td>
+            <td colspan="5" class="check-box">
+            </td>
+          </tr>
+
+          <tr class="design">
+            <td class="first-col">My coach followed ethical practices and standards of coaching</td>
+            <td colspan="5" class="check-box">
+            </td>
+          </tr>
+
+          <tr class="design">
+            <td class="first-col">
+              My coach deep dived into individual topics to illustrate them well
+            </td>
+            <td colspan="5" class="check-box">
+            </td>
+          </tr>
+
+          <tr class="design">
+            <td class="first-col">
+              My coach created a safe and supportive environment
+            </td>
+            <td colspan="5" class="check-box">
+            </td>
+          </tr>
+
+          <tr class="design">
+            <td class="first-col">
+              My coach acknowledged my expression, feelings with empathy and compassion
+            </td>
+            <td colspan="5" class="check-box">
+            </td>
+          </tr>
+
+          <tr class="design">
+            <td class="first-col">
+              My coach was fully present, conscious, and observant throughout the session
+            </td>
+            <td colspan="5" class="check-box">
+            </td>
+          </tr>
+
+          <tr class="design">
+            <td class="first-col">
+              My coach facilitated my learning insight using powerful questioning and deep listening
+            </td>
+            <td colspan="5" class="check-box">
+            </td>
+          </tr>
+
+          <tr class="design">
+            <td class="first-col">
+              I would rate my overall coaching session experience
+            </td>
+            <td colspan="5" class="check-box">
+          </tr>
+        </div>
+      </table>
+
+      <br>
+      <h5>How could the coaching session be improved/enhanced/balanced? Or If you have any creative ideas for the
+        session, please share. </h5>
+      <textarea value="Enter your Experience" rows="5" class="text" id="comments" name="comments"></textarea>
+      <div class="btn-block">
+        <button type="submit" id="Submit" name="Submit">Send Feedback</button>
+      </div>
+    </form>
+  </div>
+  
+  <script>
+	const range1 = document.querySelector('#slider');
+const div = document.querySelector('.moji');
+const mojis = ['😄','🙂','😐','😑','☹️','😩','😠','😡','🤢','😤'];
+
+range1.addEventListener('input', (e) => {
+  let rangeValue = e.target.value;
+  div.textContent = mojis[rangeValue];
+});
+  </script>
+
+</body>
+
+
+</html>

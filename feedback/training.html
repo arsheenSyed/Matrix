@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Matrrix Traning FeedBack</title>
+    <!-- Mobile Specific Meta -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <link rel="icon" href="yellow.png" />
+    <!-- Font-->
+    <link rel="stylesheet" type="text/css" href="css/montserrat-font.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css"
+    />
+    <!-- Main Style Css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style2.css" />
+  </head>
+  <body class="form-v10">
+    <img id="Image" src="download.jfif" alt="" />
+    <img id="logo" src="yellow.png" alt="" />
+    <h2 id="feeback-text">Matrrix Feedback Form</h2>
+
+    <div class="page-content">
+      <div class="form-v10-content">
+        <form
+          class="form-detail"
+          action="addFeedback.php"
+          method="post"
+          id="myform"
+        >
+          <div class="form-left">
+            <h2>Session Details</h2>
+            <div class="form-row">
+              <!-- <select name="title">
+						    <option class="option" value="title">Title</option>
+						    <option class="option" value="businessman">Businessman</option>
+						    <option class="option" value="reporter">Reporter</option>
+						    <option class="option" value="secretary">Secretary</option>
+						</select> -->
+            </div>
+            <div class="form-group">
+              <div class="form-row form-row-1">
+                <input
+                  type="text"
+                  name="first_name"
+                  id="first_name"
+                  class="input-text"
+                  placeholder="First Name"
+                  required
+                />
+              </div>
+              <div class="form-row form-row-2">
+                <input
+                  type="text"
+                  name="last_name"
+                  id="last_name"
+                  class="input-text"
+                  placeholder="Last Name"
+                  required
+                />
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="form-row form-row-3">
+                <select name="program_name">
+                  <option>Program Name</option>
+                  <option value="Session 1">Session 1</option>
+                  <option value="Session 2">Session 2</option>
+                  <option value="Session 3">Session 3</option>
+                  <option value="Session 4">Session 4</option>
+                </select>
+                <span class="select-btn">
+                  <i class="zmdi zmdi-chevron-down"></i>
+                </span>
+              </div>
+            </div>
+            <div class="form-row">
+              <input
+                type="date"
+                name="session_date"
+                class="company"
+                id="session_date"
+                placeholder="Company"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <div class="form-row form-row-3">
+                <select name="session_day">
+                  <option>Session Day</option>
+                  <option value="Monday">Monday</option>
+                  <option value="Tuesday">Tuesday</option>
+                  <option value="Wednesday">Wednesday</option>
+                  <option value="Thursday">Thursday</option>
+                  <option value="Friday">Friday</option>
+                  <option value="Saturday">Saturday</option>
+                  <option value="Sunday">Sunday</option>
+                </select>
+                <span class="select-btn">
+                  <i class="zmdi zmdi-chevron-down"></i>
+                </span>
+              </div>
+              <div class="form-row form-row-4">
+                <!-- <input type="text" name="business" class="business" id="business" placeholder="Business Arena" required>							 -->
+              </div>
+            </div>
+          </div>
+          <div class="form-right">
+            <div class="outer-cover">
+              <br />
+
+              <h3 style="text-align: center">Rating</h3>
+              <div class="wrapper">
+                <div class="wrapCol">
+                  <!-- feedback Question -->
+
+                  <div class="feedbackQuestion">
+                    <p>
+                      The fundamentals of the training were well communicated
+                    </p>
+                  </div>
+                  <!-- feedback Question -->
+                  <!-- slider -->
+                  <div class="slider">
+                    <div class="thumb">
+                      <span class="defaultEmoji emojis"></span>
+                    </div>
+
+                    <div class="progress-bar"></div>
+                    <input
+                      type="range"
+                      min="0"
+                      max="100"
+                      class="input1 inputEmoji"
+                      value="0"
+                    />
+                  </div>
+                  <!-- slider -->
+                </div>
+
+                <div class="wrapCol">
+                  <!-- feedback Question -->
+
+                  <div class="feedbackQuestion">
+                    <p>The trainer encouraged questioning</p>
+                  </div>
+                  <!-- feedback Question -->
+                  <!-- slider -->
+                  <div class="slider">
+                    <div class="thumb">
+                      <span class="defaultEmoji emojis"></span>
+                    </div>
+
+                    <div class="progress-bar"></div>
+                    <input
+                      type="range"
+                      min="0"
+                      max="100"
+                      class="inputEmoji"
+                      value="0"
+                    />
+                  </div>
+                  <!-- slider -->
+                </div>
+
+                <div class="wrapCol">
+                  <!-- feedback Question -->
+
+                  <div class="feedbackQuestion">
+                    <p>
+                      The topics covered by the trainer were relevant and
+                      engaging
+                    </p>
+                  </div>
+                  <!-- feedback Question -->
+                  <!-- slider -->
+                  <div class="slider">
+                    <div class="thumb">
+                      <span class="defaultEmoji emojis"></span>
+                    </div>
+
+                    <div class="progress-bar"></div>
+                    <input
+                      type="range"
+                      min="0"
+                      max="100"
+                      class="input1 inputEmoji"
+                      value="0"
+                    />
+                  </div>
+                  <!-- slider -->
+                </div>
+
+                <div class="wrapCol">
+                  <!-- feedback Question -->
+
+                  <div class="feedbackQuestion">
+                    <p>
+                      The trainer discussed details in-depth with an interactive
+                      tone
+                    </p>
+                  </div>
+                  <!-- feedback Question -->
+                  <!-- slider -->
+                  <div class="slider">
+                    <div class="thumb">
+                      <span class="defaultEmoji emojis"></span>
+                    </div>
+
+                    <div class="progress-bar"></div>
+                    <input
+                      type="range"
+                      min="0"
+                      max="100"
+                      class="input1 inputEmoji"
+                      value="0"
+                    />
+                  </div>
+                  <!-- slider -->
+                </div>
+
+                <div class="wrapCol">
+                  <!-- feedback Question -->
+
+                  <div class="feedbackQuestion">
+                    <p>
+                      The trainer’s knowledge was well attuned to the session
+                      topic
+                    </p>
+                  </div>
+                  <!-- feedback Question -->
+                  <!-- slider -->
+                  <div class="slider">
+                    <div class="thumb">
+                      <span class="defaultEmoji emojis"></span>
+                    </div>
+
+                    <div class="progress-bar"></div>
+                    <input
+                      type="range"
+                      min="0"
+                      max="100"
+                      class="input1 inputEmoji"
+                      value="0"
+                    />
+                  </div>
+                  <!-- slider -->
+                </div>
+
+                <div class="wrapCol">
+                  <!-- feedback Question -->
+
+                  <div class="feedbackQuestion">
+                    <p>
+                      The trainer explained with poise and with a professional
+                      approach
+                    </p>
+                  </div>
+                  <!-- feedback Question -->
+                  <!-- slider -->
+                  <div class="slider">
+                    <div class="thumb">
+                      <span class="defaultEmoji emojis"></span>
+                    </div>
+
+                    <div class="progress-bar"></div>
+                    <input
+                      type="range"
+                      min="0"
+                      max="100"
+                      class="input1 inputEmoji"
+                      value="0"
+                    />
+                  </div>
+                  <!-- slider -->
+                </div>
+
+                <div class="wrapCol">
+                  <!-- feedback Question -->
+
+                  <div class="feedbackQuestion">
+                    <p>The program was informative and interactive</p>
+                  </div>
+                  <!-- feedback Question -->
+                  <!-- slider -->
+                  <div class="slider">
+                    <div class="thumb">
+                      <span class="defaultEmoji emojis"></span>
+                    </div>
+
+                    <div class="progress-bar"></div>
+                    <input
+                      type="range"
+                      min="0"
+                      max="100"
+                      class="input1 inputEmoji"
+                      value="0"
+                    />
+                  </div>
+                  <!-- slider -->
+                </div>
+
+                <div class="wrapCol">
+                  <!-- feedback Question -->
+
+                  <div class="feedbackQuestion">
+                    <p>The trainer encouraged class participation</p>
+                  </div>
+                  <!-- feedback Question -->
+                  <!-- slider -->
+                  <div class="slider">
+                    <div class="thumb">
+                      <span class="defaultEmoji emojis"></span>
+                    </div>
+
+                    <div class="progress-bar"></div>
+                    <input
+                      type="range"
+                      min="0"
+                      max="100"
+                      class="input1 inputEmoji"
+                      value="0"
+                    />
+                  </div>
+                  <!-- slider -->
+                </div>
+
+                <div class="wrapCol">
+                  <!-- feedback Question -->
+
+                  <div class="feedbackQuestion">
+                    <p>The quality of facilitation was co-creative</p>
+                  </div>
+                  <!-- feedback Question -->
+                  <!-- slider -->
+                  <div class="slider">
+                    <div class="thumb">
+                      <span class="defaultEmoji emojis"></span>
+                    </div>
+
+                    <div class="progress-bar"></div>
+                    <input
+                      type="range"
+                      min="0"
+                      max="100"
+                      class="input1 inputEmoji"
+                      value="0"
+                    />
+                  </div>
+                  <!-- slider -->
+                </div>
+
+                <!-- column -->
+                <div class="wrapCol">
+                  <!-- feedback Question -->
+
+                  <div class="feedbackQuestion">
+                    <p>
+                      The Trainer provides feedback with permission and
+                      protection
+                    </p>
+                  </div>
+                  <!-- feedback Question -->
+                  <!-- slider -->
+                  <div class="slider">
+                    <div class="thumb">
+                      <span class="defaultEmoji emojis"></span>
+                    </div>
+
+                    <div class="progress-bar"></div>
+                    <input
+                      type="range"
+                      min="0"
+                      max="100"
+                      class="input1 inputEmoji"
+                      value="0"
+                    />
+                  </div>
+                  <!-- slider -->
+                </div>
+
+                <!-- column -->
+
+                <h3>The Training Program</h3>
+
+                <!-- column -->
+                <div class="wrapCol">
+                  <!-- feedback Question -->
+
+                  <div class="feedbackQuestion">
+                    <p>The program covered all the topics of interest.</p>
+                  </div>
+                  <!-- feedback Question -->
+                  <!-- slider -->
+                  <div class="slider">
+                    <div class="thumb">
+                      <span class="defaultEmoji emojis"></span>
+                    </div>
+
+                    <div class="progress-bar"></div>
+                    <input
+                      type="range"
+                      min="0"
+                      max="100"
+                      class="input1 inputEmoji"
+                      value="0"
+                    />
+                  </div>
+                  <!-- slider -->
+                </div>
+
+                <!-- column -->
+
+                <!-- column -->
+                <div class="wrapCol">
+                  <!-- feedback Question -->
+
+                  <div class="feedbackQuestion">
+                    <p>
+                      The training has helped me develop skills and concepts
+                      that I can use in real-time.
+                    </p>
+                  </div>
+                  <!-- feedback Question -->
+                  <!-- slider -->
+                  <div class="slider">
+                    <div class="thumb">
+                      <span class="defaultEmoji emojis"></span>
+                    </div>
+
+                    <div class="progress-bar"></div>
+                    <input
+                      type="range"
+                      min="0"
+                      max="100"
+                      class="input1 inputEmoji"
+                      value="0"
+                    />
+                  </div>
+                  <!-- slider -->
+                </div>
+
+                <!-- column -->
+
+                <!-- column -->
+                <div class="wrapCol">
+                  <!-- feedback Question -->
+
+                  <div class="feedbackQuestion">
+                    <p>The training program was sequenced and organized.</p>
+                  </div>
+                  <!-- feedback Question -->
+                  <!-- slider -->
+                  <div class="slider">
+                    <div class="thumb">
+                      <span class="defaultEmoji emojis"></span>
+                    </div>
+
+                    <div class="progress-bar"></div>
+                    <input
+                      type="range"
+                      min="0"
+                      max="100"
+                      class="input1 inputEmoji"
+                      value="0"
+                    />
+                  </div>
+                  <!-- slider -->
+                </div>
+
+                <!-- column -->
+
+                <!-- column -->
+                <div class="wrapCol">
+                  <!-- feedback Question -->
+
+                  <div class="feedbackQuestion">
+                    <p>The program's group activities piqued my interest.</p>
+                  </div>
+                  <!-- feedback Question -->
+                  <!-- slider -->
+                  <div class="slider">
+                    <div class="thumb">
+                      <span class="defaultEmoji emojis"></span>
+                    </div>
+
+                    <div class="progress-bar"></div>
+                    <input
+                      type="range"
+                      min="0"
+                      max="100"
+                      class="input1 inputEmoji"
+                      value="0"
+                    />
+                  </div>
+                  <!-- slider -->
+                </div>
+
+                <!-- column -->
+
+                <!-- column -->
+                <div class="wrapCol">
+                  <!-- feedback Question -->
+
+                  <div class="feedbackQuestion">
+                    <p>
+                      The quality of the visual aids (PPTs, videos, or text
+                      modules), discussions were immersive.
+                    </p>
+                  </div>
+                  <!-- feedback Question -->
+                  <!-- slider -->
+                  <div class="slider">
+                    <div class="thumb">
+                      <span class="defaultEmoji emojis"></span>
+                    </div>
+
+                    <div class="progress-bar"></div>
+                    <input
+                      type="range"
+                      min="0"
+                      max="100"
+                      class="input1 inputEmoji"
+                      value="0"
+                    />
+                  </div>
+                  <!-- slider -->
+                </div>
+
+                <!-- column -->
+
+                <!-- column -->
+                <div class="wrapCol">
+                  <!-- feedback Question -->
+
+                  <div class="feedbackQuestion">
+                    <p>The Program respects Diversity and Inclusion</p>
+                  </div>
+                  <!-- feedback Question -->
+                  <!-- slider -->
+                  <div class="slider">
+                    <div class="thumb">
+                      <span class="defaultEmoji emojis"></span>
+                    </div>
+
+                    <div class="progress-bar"></div>
+                    <input
+                      type="range"
+                      min="0"
+                      max="100"
+                      class="input1 inputEmoji"
+                      value="0"
+                    />
+                  </div>
+                  <!-- slider -->
+                </div>
+
+                <!-- column -->
+
+                <!-- column -->
+                <div class="wrapCol">
+                  <!-- feedback Question -->
+
+                  <div class="feedbackQuestion">
+                    <p>The Program respects Diversity and Inclusion</p>
+                  </div>
+                  <!-- feedback Question -->
+                  <!-- slider -->
+                  <div class="slider">
+                    <div class="thumb">
+                      <span class="defaultEmoji emojis"></span>
+                    </div>
+
+                    <div class="progress-bar"></div>
+                    <input
+                      type="range"
+                      min="0"
+                      max="100"
+                      class="input1 inputEmoji"
+                      value="0"
+                    />
+                  </div>
+                  <!-- slider -->
+                </div>
+
+                <!-- column -->
+
+                <h3>Subjective Questions</h3>
+
+                <!-- column -->
+                <div class="wrapCol">
+                  <!-- feedback Question -->
+
+                  <div class="feedbackQuestion">
+                    <p>
+                      What was the most interesting thing you learned from the
+                      program?
+                    </p>
+                  </div>
+                  <!-- feedback Question -->
+                  <!-- text areas -->
+                  <textarea class="traningTextArea">Your Answer...</textarea>
+                  <!-- text areas -->
+                </div>
+
+                <!-- column -->
+
+                <!-- column -->
+                <div class="wrapCol">
+                  <!-- feedback Question -->
+
+                  <div class="feedbackQuestion">
+                    <p>
+                      What would have made the session more
+                      effective/different/balanced?
+                    </p>
+                  </div>
+                  <!-- feedback Question -->
+                  <!-- text areas -->
+                  <textarea class="traningTextArea">Your Answer...</textarea>
+                  <!-- text areas -->
+                </div>
+
+                <!-- column -->
+              </div>
+            </div>
+          </div>
+          <!-- <div class="form-right">
+            <h2>Ratings</h2>
+
+            <div class="form-row">
+              <h3>
+                My challenges/issues/goals were addressed during the session
+              </h3>
+            </div>
+
+            <div class="container">
+              <div class="slider">
+                <input
+                  class="emoji-input"
+                  id="input-1"
+                  type="range"
+                  value="1"
+                  min="1"
+                  max="100"
+                  step="1"
+                  name="challenges"
+                />
+                <span class="moji" id="moji-1"></span>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <h3>I am satisfied with the coach I worked with</h3>
+            </div>
+
+            <div class="container">
+              <div class="slider">
+                <input
+                  class="emoji-input"
+                  id="input-2"
+                  type="range"
+                  value="1"
+                  min="1"
+                  max="100"
+                  step="1"
+                  name="work_satisfy"
+                />
+                <span class="moji" id="moji-2"></span>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <h3>
+                My coach followed ethical practices and standards of coaching
+              </h3>
+            </div>
+
+            <div class="container">
+              <div class="slider">
+                <input
+                  class="emoji-input"
+                  id="input-3"
+                  type="range"
+                  value="1"
+                  min="1"
+                  max="100"
+                  step="1"
+                  name="standards"
+                />
+                <span class="moji" id="moji-3"></span>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <h3>
+                My coach deep dived into individual topics to illustrate them
+                well
+              </h3>
+            </div>
+
+            <div class="container">
+              <div class="slider">
+                <input
+                  class="emoji-input"
+                  id="input-4"
+                  type="range"
+                  value="1"
+                  min="1"
+                  max="100"
+                  step="1"
+                  name="illustration"
+                />
+                <span class="moji" id="moji-4"></span>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <h3>My coach created a safe and supportive environment</h3>
+            </div>
+
+            <div class="container">
+              <div class="slider">
+                <input
+                  class="emoji-input"
+                  id="input-5"
+                  type="range"
+                  value="1"
+                  min="1"
+                  max="100"
+                  step="1"
+                  name="environment"
+                />
+                <span class="moji" id="moji-5"></span>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <h3>
+                My coach acknowledged my expression, feelings with empathy and
+                compassion
+              </h3>
+            </div>
+
+            <div class="container">
+              <div class="slider">
+                <input
+                  class="emoji-input"
+                  id="input-6"
+                  type="range"
+                  value="1"
+                  min="1"
+                  max="100"
+                  step="1"
+                  name="expression"
+                />
+                <span class="moji" id="moji-6"></span>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <h3>
+                My coach was fully present, conscious, and observant throughout
+                the session
+              </h3>
+            </div>
+
+            <div class="container">
+              <div class="slider">
+                <input
+                  class="emoji-input"
+                  id="input-7"
+                  type="range"
+                  value="1"
+                  min="1"
+                  max="100"
+                  step="1"
+                  name="consious"
+                />
+                <span class="moji" id="moji-7"></span>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <h3>
+                My coach facilitated my learning insight using powerful
+                questioning and deep listening
+              </h3>
+            </div>
+
+            <div class="container">
+              <div class="slider">
+                <input
+                  class="emoji-input"
+                  id="input-8"
+                  type="range"
+                  value="1"
+                  min="1"
+                  max="100"
+                  step="1"
+                  name="power"
+                />
+                <span class="moji" id="moji-8"></span>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <h3>I would rate my overall coaching session experience</h3>
+            </div>
+
+            <div class="container">
+              <div class="slider">
+                <input
+                  class="emoji-input"
+                  id="input-9"
+                  type="range"
+                  value="1"
+                  min="1"
+                  max="100"
+                  step="1"
+                  name="overall"
+                />
+                <span class="moji" id="moji-9"></span>
+              </div>
+            </div>
+
+            <div class="form-row-last">
+              <input
+                type="submit"
+                name="submit"
+                class="register"
+                value="Submit Feedback"
+              />
+            </div>
+          </div> -->
+        </form>
+      </div>
+    </div>
+
+    <script src="js/emoji.js"></script>
+  </body>
+  <!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>

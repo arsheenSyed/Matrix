@@ -1,0 +1,178 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"); */
+
+.form-right {
+  overflow-y: scroll;
+}
+
+.wrapper {
+  color: white;
+  /* background: #df2323d1; */
+  padding: 30px 40px 40px;
+  border-radius: 10px;
+  /* max-width: 350px; */
+  width: 80%;
+  height: 500px;
+  margin: 0 auto;
+  /* display: flex;
+    align-items: center;
+    flex-direction: column; */
+  scroll-behavior: smooth;
+  /* overflow-y: scroll; */
+}
+
+.wrapper .slider {
+  height: 12px;
+  width: 100%;
+  /* background-color: #d9d9d9; */
+  background-color: rgb(247 244 255);
+  margin-top: 40px;
+  position: relative;
+  border-radius: 50px;
+}
+
+.wrapper .wrapCol {
+  margin-bottom: 50px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid white;
+}
+
+.wrapper .wrapCol:nth-child(9) {
+  border-bottom: none;
+}
+.slider input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  outline: none;
+  background: none;
+  -webkit-appearance: none;
+}
+
+.slider input::-webkit-slider-thumb {
+  height: 100px;
+  width: 100px;
+  -webkit-appearance: none;
+  background: none;
+  cursor: pointer;
+  transition: 0s ease-in-out;
+}
+
+.slider .progress-bar {
+  height: 100%;
+  width: 15%;
+  background: rgb(242 186 73);
+  border-radius: 54px;
+  transition: 0s ease-in-out;
+}
+
+.slider .thumb {
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  height: 25px;
+  width: 25px;
+  transform: translate(0%, -65%);
+  pointer-events: none;
+  transition: 0s ease-in-out;
+}
+
+.slider .thumb span.defaultEmoji {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: url("../emojisPNGNew/sad.ico");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  /* transition: 0s ease-in-out; */
+}
+
+.slider .thumb span.Emoji1 {
+  display: block;
+  width: 100%;
+  /* height: 35px; */
+  /* background: red; */
+  background-image: url("../emojisPNGNew/sad.ico");
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  /* border: 2px solid #f6f6f6; */
+  height: 100%;
+
+  /* transition: 0s ease-in-out; */
+}
+
+.slider .thumb span.Emoji2 {
+  display: block;
+  width: 100%;
+  /* height: 40px; */
+  /* background: red; */
+  background-image: url("../emojisPNGNew/sadEmoji.ico");
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  /* border: 2px solid #f6f6f6; */
+  height: 100%;
+
+  /* transition: 0s ease-in-out; */
+}
+
+.slider .thumb span.Emoji3 {
+  display: block;
+  width: 100%;
+  /* height: 45px; */
+  /* background: red; */
+  background-image: url("../emojisPNGNew/happy.ico");
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  /* border: 2px solid #f6f6f6; */
+  height: 100%;
+
+  /* transition: 0s ease-in-out; */
+}
+
+.slider .thumb span.Emoji4 {
+  display: block;
+  width: 100%;
+  /* height: 50px; */
+  /* background: red; */
+  background-image: url("../emojisPNGNew/veryHappy.ico");
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  height: 100%;
+
+  /* transition: 0s ease-in-out; */
+}
+
+.slider .thumb span.Emoji5 {
+  display: block;
+  width: 100%;
+  background-image: url("../emojisPNGNew/lovedIt.ico");
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  height: 100%;
+}
+
+/* styling TextArea */
+.traningTextArea {
+  font-family: sans-serif;
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
+}
