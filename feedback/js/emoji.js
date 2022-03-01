@@ -15,11 +15,12 @@ window.onload = function () {
     thumbLeft,
     barWidth
   ) {
+    let barPlus = ++barWidth;
     span.className = className;
     thumb.style.height = thumbHeight;
     thumb.style.width = thumbWidth;
     thumb.style.left = thumbLeft + "%";
-    bar.style.width = barWidth + "%";
+    bar.style.width = barPlus + "%";
   }
 
   function emojiSlider(e, thumb, bar, span) {
