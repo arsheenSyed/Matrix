@@ -1,6 +1,17 @@
-<?php
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<?php
 //including the database connection file
 include_once("config.php");
+
 
 if(isset($_POST['submit'])) {	
 	$f_name = $_POST['first_name'];
@@ -37,4 +48,37 @@ if(isset($_POST['submit'])) {
 		echo "<br/><a href='showFeedbacks.php'>Back</a>";
 	
 }
+
+function values() {
+	$f_name = $_POST['first_name'];
+	$l_name = $_POST['last_name']);
+	$program_name = $_POST['program_name']);
+	$session_date = $_POST['session_date']);
+    $session_day = $_POST['session_day']);
+	
+	$challenges =  $_POST['challenges']);
+	$work_satisfy =  $_POST['work_satisfy']);  
+	$standards =  $_POST['standards']);  
+	$illustration =  $_POST['illustration']);  
+	$environment =  $_POST['environment']);  
+	$expression =  $_POST['expression']);  
+	$consious =  $_POST['consious']);  
+	$power =  $_POST['power']);  
+	$overall =  $_POST['overall']);  
+}
+
+
+
 ?>
+
+
+<script>
+
+	window.onload = function() {
+		<?
+      values();
+		?>
+	}
+</script>
+</body>
+</html>
